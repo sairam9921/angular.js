@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directiveApp">
+<head>
+    <meta charset="UTF-8">
+    <title>ng_directive</title>
+    <script src="js/lib/angular.min.js"  ></script>
+    <script src="js/lib/jquery.min.js"  ></script>
+    <script src="js/app.js" ></script>
+    <script src="js/lib/dire.js" ></script>
+
+</head>
+<body ng-controller="dirCtrl" >
+<form>
+<table>
+    <tr>
+        <td>
+            <label bold>student Name:</label>
+        </td>
+        <td>
+            <input type="text value=" ng-model="user.name" name="name" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label bold> Roll:</label>
+        </td>
+        <td>
+            <input type="text value=" ng-model="user.roll" name="roll" required >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Marks1:</label>
+        </td>
+        <td>
+            <input type="text value=" ng-model="user.marks1" name="marks1" required bold>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Marks2:</label>
+        </td>
+        <td>
+            <input type="text value=" ng-model="user.marks2" name="marks2" required bold>
+        </td>
+    </tr>
+</table>
+<input type="submit" ng-click="getMarks();">Submit</input>
+<span ng-bind="display"></span>
+</form>
+</body>
+</html>
